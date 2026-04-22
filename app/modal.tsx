@@ -13,7 +13,7 @@ export default function ModalScreen() {
       </ThemedText>
 
       <ThemedText style={styles.subtitle}>
-        This is your modal screen. You can customize it however you like.
+        This is tolus app. You are great.
       </ThemedText>
 
       <Link href="/" dismissTo style={styles.button}>
