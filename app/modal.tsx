@@ -7,10 +7,21 @@ import { ThemedView } from '@/components/themed-view';
 export default function ModalScreen() {
   return (
     <ThemedView style={styles.container}>
-      <ThemedText type="title">This is a modal</ThemedText>
-      <Link href="/" dismissTo style={styles.link}>
-        <ThemedText type="link">Go to home screen</ThemedText>
+      
+      <ThemedText type="title" style={styles.title}>
+        🚀 Welcome
+      </ThemedText>
+
+      <ThemedText style={styles.subtitle}>
+        This is your modal screen. You can customize it however you like.
+      </ThemedText>
+
+      <Link href="/" dismissTo style={styles.button}>
+        <ThemedText type="link" style={styles.buttonText}>
+          Go to Home
+        </ThemedText>
       </Link>
+
     </ThemedView>
   );
 }
@@ -20,10 +31,30 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 20,
+    paddingHorizontal: 24,
   },
-  link: {
-    marginTop: 15,
-    paddingVertical: 15,
+
+  title: {
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+
+  subtitle: {
+    fontSize: 14,
+    opacity: 0.7,
+    textAlign: 'center',
+    marginBottom: 25,
+  },
+
+  button: {
+    backgroundColor: '#0a84ff',
+    paddingVertical: 14,
+    paddingHorizontal: 24,
+    borderRadius: 10,
+  },
+
+  buttonText: {
+    color: '#fff',
+    fontWeight: '600',
   },
 });
